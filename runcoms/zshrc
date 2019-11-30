@@ -10,4 +10,92 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Uncomment this and the last line of this file for shell load profiling
+# For debugging a slow startup
+# zmodload zsh/zprof
+
+zstyle ':completion:*' menu select
+
+# case insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+### fuzzy completion
+# lifted from http://superuser.com/a/815317/555734
+# 0 -- vanilla completion (abc => abc)
+# 1 -- smart case completion (abc => Abc)
+# 2 -- word flex completion (abc => A-big-Car)
+# 3 -- full flex completion (abc => ABraCadabra)
+zstyle ':completion:*' matcher-list '' \
+  'm:{a-z\-}={A-Z\_}' \
+  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+  'r:[[:ascii:]]||[[:ascii:]]=** r:|=* m:{a-z\-}={A-Z\_}'
+
+# colors: magenta, green, blue,cyan, yellow, red
+zstyle ':completion:*:functions' ignored-patterns '_*'
+zstyle ':completion:*' format $'\n%F{yellow}Completing %d%f\n'
+zstyle ':completion:*' group-name ''
+
+# ORDER
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  host
+  dir
+  git_branch
+  node
+  ruby
+  golang
+  docker
+  venv
+  pyenv
+  exec_time
+  exit_code
+  line_sep
+  char
+)
+
+# HOST
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_HOST_PREFIX="@ "
+SPACESHIP_HOST_COLOR="green"
+# USER
+SPACESHIP_USER_SHOW=true
+SPACESHIP_USER_COLOR="yellow"
+SPACESHIP_USER_COLOR_ROOT="red"
+# RUBY
+SPACESHIP_RUBY_SYMBOL=" "
+# EXEC TIME
+SPACESHIP_EXEC_TIME_SHOW=true
+SPACESHIP_EXEC_TIME_ELAPSED=5
+# TIME
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_PREFIX=" "
+SPACESHIP_TIME_12HR=false
+# EXIT CODE
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_EXIT_CODE_PREFIX="[ "
+SPACESHIP_EXIT_CODE_SYMBOl="  "
+SPACESHIP_EXIT_CODE_SUFFIX=" ] "
+
+# Dir
+SPACESHIP_DIR_TRUNC=6
+SPACESHIP_DIR_TRUNC_PREFIX="…/"
+SPACESHIP_DIR_TRUNC_REPO='false'
+
+# Git branch config
+# I only show branch because status slows things down for large repos.
+SPACESHIP_GIT_BRANCH_PREFIX="on  "
+SPACESHIP_GIT_BRANCH_SHOW="true"
+SPACESHIP_GIT_BRANCH_SUFFIX=" "
+
+ulimit -n 20480
+
+source "$HOME/.zsh_aliases"
+# Work related config
+source "$HOME/.work-zsh-aliases"
+source "$HOME/.zworkconfig"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Uncomment this line and the topmost line of this rc file for shell profiling
+# For debugging a slow startup
+# zprof
