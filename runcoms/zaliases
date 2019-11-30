@@ -1,0 +1,40 @@
+# Dotfiles
+alias zshconfig="vim $HOME/.zshrc"
+alias vimconfig="vim $HOME/.vimrc"
+alias preztoconfig="vim $HOME/.preztorc"
+alias reloadzsh="source $HOME/.zshrc"
+
+# Misc
+alias wttr='curl wttr.in'
+
+# Bundler
+alias be='bundle exec'
+alias bi='bundle install'
+alias bl='bundle list'
+alias blr='bundle exec irb'
+alias blc='bundle exec bin/console'
+alias biv='bundle install --path vendor/bundle'
+
+# Ruby related
+alias undocumented_yard='yard stats --list-undoc'
+alias rspec_redirected='rspec &> test_output.log &'
+
+# Git related
+# Some of these are from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
+alias gitignore='vi ./.gitignore'
+alias latest_commit_msg='git log -1 --pretty=%B | pbcopy'
+alias ga='git add'
+alias gaa='git add --all'
+alias gst='git status'
+alias gpp='git push -v'
+alias gc='git commit -v'
+alias gcm='git checkout master'
+alias gup='git pull --rebase -v'
+alias glgp='git log --stat -p'
+alias useful_gitlog='glgp'
+alias gppfl='git push --force-with-lease'
+alias nicediff="git log -r --oneline"
+alias gup='git pull --rebase --verbose'
+alias gitree='git log --graph --oneline --all'
+alias show_latest_stash='git stash show -p stash@{0}'
+alias messed_up_my_commit_msg='git commit --amend'
