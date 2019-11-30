@@ -90,7 +90,7 @@ SPACESHIP_GIT_BRANCH_SUFFIX=" "
 
 ulimit -n 20480
 
-source "$HOME/.zsh_aliases"
+source "$HOME/.zaliases"
 # Work related config
 source "$HOME/.work-zsh-aliases"
 source "$HOME/.zworkconfig"
