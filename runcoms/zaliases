@@ -1,7 +1,7 @@
 # Dotfiles
 alias zshconfig="vim $HOME/.zshrc"
 alias vimconfig="vim $HOME/.vimrc"
-alias preztoconfig="vim $HOME/.preztorc"
+alias preztoconfig="vim $HOME/.zpreztorc"
 alias reloadzsh="source $HOME/.zshrc"
 
 # Misc
