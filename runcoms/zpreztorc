@@ -204,7 +204,7 @@ zstyle ':prezto:module:prompt' theme 'spaceship'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
@@ -238,4 +238,5 @@ zstyle ':prezto:module:prompt' theme 'spaceship'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+# zstyle ':prezto:modulie:utility' safe-ops 'yes'
+setopt clobber
