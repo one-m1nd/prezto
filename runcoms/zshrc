@@ -99,3 +99,4 @@ source "$HOME/.zworkconfig"
 # Uncomment this line and the topmost line of this rc file for shell profiling
 # For debugging a slow startup
 # zprof
+setopt clobber

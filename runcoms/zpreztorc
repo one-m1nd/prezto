@@ -239,4 +239,3 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:modulie:utility' safe-ops 'yes'
-setopt clobber
