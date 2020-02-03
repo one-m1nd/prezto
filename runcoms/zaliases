@@ -15,6 +15,7 @@ alias blr='bundle exec irb'
 alias blc='bundle exec bin/console'
 alias biv='bundle install --path vendor/bundle'
 alias rspec='bundle exec rspec'
+alias yard='bundle exec yard'
 
 # Ruby related
 alias undocumented_yard='yard stats --list-undoc'
