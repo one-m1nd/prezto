@@ -3,6 +3,10 @@ alias zshconfig="vim $HOME/.zshrc"
 alias vimconfig="vim $HOME/.vimrc"
 alias preztoconfig="vim $HOME/.zpreztorc"
 alias reloadzsh="source $HOME/.zshrc"
+alias aliasconfig="vim $HOME/.zaliases"
+
+# Grep
+alias -g gp='| grep'
 
 # Misc
 alias wttr='curl wttr.in'
@@ -27,6 +31,7 @@ alias gitignore='vi ./.gitignore'
 alias latest_commit_msg='git log -1 --pretty=%B | pbcopy'
 alias ga='git add'
 alias gaa='git add --all'
+alias gs='git status'
 alias gst='git status'
 alias gpp='git push -v'
 alias gc='git commit -v'
