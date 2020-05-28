@@ -53,6 +53,7 @@ alias init_pyenv='eval "$(pyenv init - zsh --no-rehash)"'
 case "$(uname -s)" in
    Linux)
      alias rubymine='$HOME/bin/RubyMine-2020.1.1/bin/rubymine.sh &'
+     alias init_redshit='redshift -l 42.373615:-71.109734 &'
      ;;
 esac
 
