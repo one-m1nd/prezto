@@ -10,6 +10,7 @@ alias -g gp='| grep'
 
 # Misc
 alias wttr='curl wttr.in'
+alias ls="ls -t"
 
 # Bundler
 alias be='bundle exec'
@@ -21,6 +22,7 @@ alias biv='bundle install --path vendor/bundle'
 alias rspec='bundle exec rspec'
 alias yard='bundle exec yard'
 alias blp='bundle exec pry'
+alias bgi='rm -f Gemfile.lock ; biv'
 
 # Ruby related
 alias undocumented_yard='yard stats --list-undoc'
