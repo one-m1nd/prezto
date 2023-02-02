@@ -10,6 +10,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+  source /etc/profile.d/vte.sh
+fi
+
 # Uncomment this and the last line of this file for shell load profiling
 # For debugging a slow startup
 # zmodload zsh/zprof
@@ -107,4 +111,3 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # NVM path
 export NVM_DIR="$HOME/.nvm"
 alias init_nvm="source $NVM_DIR/nvm.sh" # This alias needs to be here because of load order
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
