@@ -11,6 +11,7 @@ alias -g gp='| grep'
 # Misc
 alias wttr='curl wttr.in'
 alias ls="ls -t --color"
+alias history="history 1"
 
 # Bundler
 alias be='bundle exec'
