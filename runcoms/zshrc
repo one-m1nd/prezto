@@ -110,4 +110,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # NVM path
 export NVM_DIR="$HOME/.nvm"
-alias init_nvm="source $NVM_DIR/nvm.sh" # This alias needs to be here because of load order
+alias init_nvm="source $NVM_DIR/nvm.sh && nvm use" # This alias needs to be here because of load order
