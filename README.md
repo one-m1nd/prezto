@@ -116,6 +116,11 @@ project; so, that you can commit your changes and push them to [GitHub][4] to
 not lose them. If you do not know how to use Git, follow this [tutorial][5] and
 bookmark this [reference][6].
 
+
+Additional
+-------
+https://github.com/belak/prezto-contrib#usage
+
 Resources
 ---------
 
