@@ -23,7 +23,9 @@ alias biv='bundle install --path vendor/bundle'
 alias rspec='bundle exec rspec'
 alias yard='bundle exec yard'
 alias blp='bundle exec pry'
-alias bgi='rm -f Gemfile.lock ; biv'
+alias bgi='rm -rf vendor/bundle ; rm -f Gemfile.lock ; biv'
+alias bgif='bgi --full-index'
+alias bivf='biv --full-index'
 
 # Ruby related
 alias undocumented_yard='yard stats --list-undoc'
