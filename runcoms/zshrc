@@ -96,8 +96,8 @@ ulimit -n 20480
 
 source "$HOME/.zaliases"
 # Work related config
-source "$HOME/.work-zsh-aliases"
-source "$HOME/.zworkconfig"
+test -f "$HOME/.work-zsh-aliases" && source "$HOME/.work-zsh-aliases"
+test -f "$HOME/.zworkconfig" && source "$HOME/.zworkconfig"
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # Uncomment this line and the topmost line of this rc file for shell profiling
