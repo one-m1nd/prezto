@@ -10,10 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-  source /etc/profile.d/vte.sh
-fi
-
 # Uncomment this and the last line of this file for shell load profiling
 # For debugging a slow startup
 # zmodload zsh/zprof
@@ -95,11 +91,11 @@ SPACESHIP_GIT_BRANCH_SUFFIX=" "
 ulimit -n 20480
 
 source "$HOME/.zaliases"
+
 # Work related config
 test -f "$HOME/.work-zsh-aliases" && source "$HOME/.work-zsh-aliases"
 test -f "$HOME/.zworkconfig" && source "$HOME/.zworkconfig"
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # Uncomment this line and the topmost line of this rc file for shell profiling
 # For debugging a slow startup
 # zprof

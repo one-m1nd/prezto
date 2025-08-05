@@ -40,7 +40,7 @@ alias gs='git status'
 alias gst='git status'
 alias gpp='git push -v'
 alias gc='git commit -v'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gup='git pull --rebase -v'
 alias glgp='git log --stat -p --pretty=fuller'
 alias gss='git show --pretty=fuller'
@@ -60,7 +60,8 @@ alias init_pyenv='eval "$(pyenv init - zsh --no-rehash)"'
 
 case "$(uname -s)" in
    Linux)
-     alias rubymine='$HOME/bin/RubyMine-2023.1/bin/rubymine.sh &> /dev/null &'
+     alias rubymine='$HOME/bin/RubyMine-2023.2.8/bin/rubymine.sh &> /dev/null &'
+     alias obsidian='$HOME/bin/Obsidian-1.8.10.AppImage &> /dev/null &'
      alias init_redshift='redshift -l 42.373615:-71.109734 &'
      alias audiofricked="pulseaudio -k && sudo alsa force-reload"
      ;;
