@@ -51,6 +51,7 @@ alias gup='git pull --rebase --verbose'
 alias gitree='git log --graph --oneline --all'
 alias show_latest_stash='git stash show -p stash@{0}'
 alias messed_up_my_commit_msg='git commit --amend'
+alias huh='git checkout -'
 
 # Docker
 alias dbd='docker build .'
