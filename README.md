@@ -64,6 +64,16 @@ Additional Installation
 5. [vundle](https://github.com/VundleVim/Vundle.vim)
 6. [FireCode Patched Font](https://www.nerdfonts.com/font-downloads)
 
+
+Update git
+```
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com A1715D88E1DF1F24 40976EAF437D05B5 3B4FE6ACC0B21F32 A6616109451BBBF2
+sudo apt-get update
+sudo apt-get install git -y
+git --version
+```
+
 Binaries/executables ... place in ~/bin
 
 `mkdir "$HOME/bin"`
