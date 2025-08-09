@@ -9,6 +9,8 @@ This is my custom fork.
 
 New system setup
 ----------------
+## Ubuntu based distro
+
 ```bash
 sudo groupadd gigachad
 sudo usermod -aG gigachad $USER
@@ -19,7 +21,12 @@ sudo visudo
 # %gigachad ALL=(ALL) NOPASSWD: ALL
 
 sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop ncal
+sudo apt install openjdk-18-jre
 ```
+---
+
+## OSX
+TODO
 
 Installation
 ------------
@@ -55,10 +62,11 @@ Additional Installation
 3. [pyenv](https://github.com/pyenv/pyenv)
 4. [ghosttty](https://github.com/mkasberg/ghostty-ubuntu)
 5. [vundle](https://github.com/VundleVim/Vundle.vim)
+6. [FireCode Patched Font](https://www.nerdfonts.com/font-downloads)
 
 Binaries/executables ... place in ~/bin
 
-`mkdir "$HOME/bin`
+`mkdir "$HOME/bin"`
 
 1. [rubymine](https://www.jetbrains.com/ruby/)
    * Fallback version `2023.2.8`
