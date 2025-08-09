@@ -18,7 +18,7 @@ sudo visudo
 # Allow gigachads to sudo passwdless
 # %gigachad ALL=(ALL) NOPASSWD: ALL
 
-sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop
+sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop ncal
 ```
 
 Installation
