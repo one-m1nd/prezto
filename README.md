@@ -32,6 +32,15 @@ sudo apt-get update
 sudo apt-get install git -y
 git --version
 ```
+
+### Refind
+[Docs](https://www.rodsbooks.com/refind/installing.html)
+
+```
+sudo apt-add-repository ppa:rodsmith/refind
+sudo apt-get update
+sudo apt-get install refind
+```
 ---
 
 ## OSX
