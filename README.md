@@ -22,6 +22,9 @@ sudo visudo
 
 sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop btop ncal
 sudo apt install openjdk-18-jre
+
+# GNOME only
+sudo apt install gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors
 ```
 
 ### Update git
