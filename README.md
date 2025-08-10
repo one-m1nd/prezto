@@ -76,6 +76,7 @@ Additional Installation
 -----------------------
 1. [rvm](https://rvm.io/)
    * `curl -sSL https://get.rvm.io | bash -s master`
+   * `gem update --system`
 2. [nvm](https://github.com/nvm-sh/nvm)
 3. [pyenv](https://github.com/pyenv/pyenv)
 4. [ghosttty](https://github.com/mkasberg/ghostty-ubuntu)
