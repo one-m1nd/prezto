@@ -21,7 +21,7 @@ sudo visudo
 # %gigachad ALL=(ALL) NOPASSWD: ALL
 
 sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop btop ncal xclip
-sudo apt install openjdk-18-jre
+sudo apt install openjdk-18-jre konsole
 
 # GNOME only
 sudo apt install gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors
@@ -82,9 +82,8 @@ Additional Installation
    * `gem update --system`
 2. [nvm](https://github.com/nvm-sh/nvm)
 3. [pyenv](https://github.com/pyenv/pyenv)
-4. [ghosttty](https://github.com/mkasberg/ghostty-ubuntu)
-5. [vundle](https://github.com/VundleVim/Vundle.vim)
-6. [FireCode Patched Font](https://www.nerdfonts.com/font-downloads)
+4. [vundle](https://github.com/VundleVim/Vundle.vim)
+5. [FireCode Patched Font](https://www.nerdfonts.com/font-downloads)
 
 Binaries/executables ... place in ~/bin
 
