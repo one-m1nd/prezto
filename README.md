@@ -44,6 +44,13 @@ sudo apt-add-repository ppa:rodsmith/refind
 sudo apt-get update
 sudo apt-get install refind
 ```
+
+### NVIDIA drivers
+> [!CAUTION]
+> Only if distro doesn't have them baked in OR GPU is too old
+
+https://unix.stackexchange.com/questions/352828/how-to-switch-nvidia-driver-from-nouveau-to-nvidia-proprietary
+
 ---
 
 ## OSX
