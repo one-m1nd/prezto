@@ -83,7 +83,7 @@ Additional Installation
 2. [nvm](https://github.com/nvm-sh/nvm)
 3. [pyenv](https://github.com/pyenv/pyenv)
 4. [vundle](https://github.com/VundleVim/Vundle.vim)
-5. [FireCode Patched Font](https://www.nerdfonts.com/font-downloads)
+5. [FiraCode Patched Font](https://www.nerdfonts.com/font-downloads)
 
 Binaries/executables ... place in ~/bin
 
