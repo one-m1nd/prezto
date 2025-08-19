@@ -30,6 +30,7 @@ alias bivf='biv --full-index'
 # Ruby related
 alias undocumented_yard='yard stats --list-undoc'
 alias rspec_redirected='rspec &> test_output.log &'
+alias gem_dir='eval "cd $HOME/.rvm/gems/$(rvm current)/gems"'
 
 # Git related
 # Some of these are from https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh

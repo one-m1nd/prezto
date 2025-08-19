@@ -9,8 +9,14 @@
 # Browser
 #
 
+# Config needed on OSX
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  bindkey -e
+  bindkey '^[[1;9C' forward-word
+  bindkey '^[[1;9D' backward-word
 fi
 
 #

@@ -1,15 +1,17 @@
-Prezto — Instantly Awesome Zsh
-==============================
-
+# Prezto — Instantly Awesome Zsh
 Prezto is the configuration framework for [Zsh][1]; it enriches the command line
 interface environment with sane defaults, aliases, functions, auto completion,
 and prompt themes.
 
 This is my custom fork.
 
-New system setup
-----------------
+# New system setup
+1. [Ubuntu based distro](#ubuntu-based-distro)
+2. [OSX](#osx)
+
 ## Ubuntu based distro
+> [!CAUTION]
+> Only do the following if machine is yours
 
 ```bash
 sudo groupadd gigachad
@@ -19,9 +21,11 @@ sudo visudo
 # Add following before @includedir, uncomment last line
 # Allow gigachads to sudo passwdless
 # %gigachad ALL=(ALL) NOPASSWD: ALL
+```
 
-sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop btop ncal xclip
-sudo apt install openjdk-18-jre konsole
+```bash
+sudo apt install zsh vim ranger w3m ncdu redshift neofetch tig htop btop ncal
+sudo apt install openjdk-18-jre xclip konsole
 
 # GNOME only
 sudo apt install gnome-shell-extension-manager gir1.2-gtop-2.0 lm-sensors
@@ -37,6 +41,9 @@ git --version
 ```
 
 ### Refind
+> [!NOTE]
+> Only needed if going run multiple operating systems on the same machine
+
 [Docs](https://www.rodsbooks.com/refind/installing.html)
 
 ```
@@ -54,7 +61,17 @@ https://unix.stackexchange.com/questions/352828/how-to-switch-nvidia-driver-from
 ---
 
 ## OSX
-TODO
+### Install
+1. [brew](https://brew.sh/)
+
+```bash
+brew update
+brew install ranger tig ncdu bash neofetch openssl@3 shellcheck htop w3m
+brew install openssh libffi cmake yq ykman libu2f-udev pyenv vim btop
+
+# better 'alt' tab for OSX
+brew install --cask alt-tab
+```
 
 Installation
 ------------
@@ -82,8 +99,10 @@ cd $ZPREZTODIR
 git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 ```
 
-Additional Installation
------------------------
+---
+
+# Additional Installation
+## Common
 1. [rvm](https://rvm.io/)
    * `curl -sSL https://get.rvm.io | bash -s master`
    * `gem update --system`
@@ -91,6 +110,9 @@ Additional Installation
 3. [pyenv](https://github.com/pyenv/pyenv)
 4. [vundle](https://github.com/VundleVim/Vundle.vim)
 5. [FiraCode Patched Font](https://www.nerdfonts.com/font-downloads)
+
+## OSX
+1. [iterm2](https://iterm2.com/index.html)
 
 Binaries/executables ... place in ~/bin
 
