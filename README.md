@@ -114,6 +114,7 @@ git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 ## OSX
 1. [iterm2](https://iterm2.com/index.html)
 
+## Linux
 Binaries/executables ... place in ~/bin
 
 `mkdir "$HOME/bin"`
