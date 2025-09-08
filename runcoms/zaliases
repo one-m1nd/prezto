@@ -16,6 +16,8 @@ alias history="history 1"
 # Bundler
 alias be='bundle exec'
 alias bi='bundle install'
+alias bis='bundle install --standalone'
+alias bb='bundle binstubs --all --standalone'
 alias bl='bundle list'
 alias blr='bundle exec irb'
 alias blc='bundle exec bin/console'
