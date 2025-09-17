@@ -22,7 +22,61 @@ alias bl='bundle list'
 alias blr='bundle exec irb'
 alias blc='bundle exec bin/console'
 alias biv='bundle install --path vendor/bundle'
-alias rspec='bundle exec rspec'
+
+# Use binstubs if present
+rspec () {
+  if [[ -f 'binstubs/rspec' ]]; then
+    echo 'using binstub'
+    binstubs/rspec
+    return $?
+  fi
+
+  # Monorepo
+  if [[ -f '../binstubs/rspec' ]]; then
+    echo 'using binstub'
+    ../binstubs/rspec
+    return $?
+  fi
+
+  bundle exec rspec
+}
+
+rubocop () {
+  if [[ -f 'binstubs/rubocop' ]]; then
+    echo 'using binstub'
+    binstubs/rubocop
+    return $?
+  fi
+
+  # Monorepo
+  if [[ -f '../binstubs/rubocop' ]]; then
+    echo 'using binstub'
+    ../binstubs/rubocop
+    return $?
+  fi
+
+  bundle exec rubocop
+}
+
+reek () {
+  if [[ -f 'binstubs/reek' ]]; then
+    echo 'using binstub'
+    binstubs/reek
+    return $?
+  fi
+
+  # Monorepo
+  if [[ -f '../binstubs/reek' ]]; then
+    echo 'using binstub'
+    ../binstubs/reek
+    return $?
+  fi
+
+  bundle exec reek
+}
+
+alias rlint='reek && rubocop'
+
 alias yard='bundle exec yard'
 alias rubycritic='be rubycritic lib'
 alias blp='bundle exec pry'
