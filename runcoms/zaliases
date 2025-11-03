@@ -26,52 +26,52 @@ alias biv='bundle install --path vendor/bundle'
 rspec () {
   if [[ -f 'binstubs/rspec' ]]; then
     echo 'using binstub'
-    binstubs/rspec
+    binstubs/rspec "$@"
     return $?
   fi
 
   # Monorepo
   if [[ -f '../binstubs/rspec' ]]; then
     echo 'using binstub'
-    ../binstubs/rspec
+    ../binstubs/rspec "$@"
     return $?
   fi
 
-  bundle exec rspec
+  bundle exec rspec "$@"
 }
 
 rubocop () {
   if [[ -f 'binstubs/rubocop' ]]; then
     echo 'using binstub'
-    binstubs/rubocop
+    binstubs/rubocop "$@"
     return $?
   fi
 
   # Monorepo
   if [[ -f '../binstubs/rubocop' ]]; then
     echo 'using binstub'
-    ../binstubs/rubocop
+    ../binstubs/rubocop "$@"
     return $?
   fi
 
-  bundle exec rubocop
+  bundle exec rubocop "$@"
 }
 
 reek () {
   if [[ -f 'binstubs/reek' ]]; then
     echo 'using binstub'
-    binstubs/reek
+    binstubs/reek "$@"
     return $?
   fi
 
   # Monorepo
   if [[ -f '../binstubs/reek' ]]; then
     echo 'using binstub'
-    ../binstubs/reek
+    ../binstubs/reek "$@"
     return $?
   fi
 
-  bundle exec reek
+  bundle exec reek "$@"
 }
 
 alias rlint='reek && rubocop'
