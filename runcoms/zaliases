@@ -21,7 +21,7 @@ alias bl='bundle list'
 alias blr='bundle exec irb'
 alias blc='bundle exec bin/console'
 alias biv='bundle install --path vendor/bundle'
-alias bo='bundle outdated'
+alias bo='bundle outdated --only-explicit'
 alias bu='bundle update'
 
 # Use binstubs if present
