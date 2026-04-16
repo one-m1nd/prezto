@@ -76,7 +76,23 @@ reek () {
   bundle exec reek "$@"
 }
 
-alias rlint='reek && rubocop'
+
+yard () {
+  if [[ -f 'binstubs/yard' ]]; then
+    echo 'using binstub'
+    binstubs/yard "$@"
+    return $?
+  fi
+
+  # Monorepo
+  if [[ -f '../binstubs/yard' ]]; then
+    echo 'using binstub'
+    ../binstubs/yard "$@"
+    return $?
+  fi
+
+  bundle exec yard "$@"
+}
 
 alias yard='bundle exec yard'
 alias rubycritic='be rubycritic lib'
