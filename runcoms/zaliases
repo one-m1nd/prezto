@@ -94,7 +94,6 @@ yard () {
   bundle exec yard "$@"
 }
 
-alias yard='bundle exec yard'
 alias rubycritic='be rubycritic lib'
 alias blp='bundle exec pry'
 alias bgi='rm -rf vendor/bundle ; rm -f Gemfile.lock ; biv'
