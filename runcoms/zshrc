@@ -4,15 +4,13 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+# Uncomment to debug slow startup along with last line of this file
+zmodload zsh/zprof
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Uncomment this and the last line of this file for shell load profiling
-# For debugging a slow startup
-# zmodload zsh/zprof
 
 zstyle ':completion:*' menu select
 
@@ -64,6 +62,10 @@ SPACESHIP_USER_COLOR="yellow"
 SPACESHIP_USER_COLOR_ROOT="red"
 # RUBY
 SPACESHIP_RUBY_SYMBOL=" "
+# NODE
+SPACESHIP_NODE_SHOW=true
+# DOCKER
+SPACESHIP_DOCKER_SYMBOL=" "
 # EXEC TIME
 SPACESHIP_EXEC_TIME_SHOW=true
 SPACESHIP_EXEC_TIME_ELAPSED=5
@@ -97,10 +99,11 @@ test -f "$HOME/.work-zsh-aliases" && source "$HOME/.work-zsh-aliases"
 test -f "$HOME/.zworkconfig" && source "$HOME/.zworkconfig"
 
 # Uncomment this line and the topmost line of this rc file for shell profiling
-# For debugging a slow startup
-# zprof
 setopt clobber
 
 # NVM path
 export NVM_DIR="$HOME/.nvm"
 alias init_nvm="source $NVM_DIR/nvm.sh && nvm use" # This alias needs to be here because of load order
+
+# Uncommnet this to debug slow startup
+zprof
