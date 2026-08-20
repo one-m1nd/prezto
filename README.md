@@ -5,6 +5,15 @@ and prompt themes.
 
 This is my custom fork.
 
+# Updating spaceship
+```bash
+# ~/.zprezto/contrib
+git submodule update --remote contrib-prompt/external/spaceship
+
+# ~/.zprezto/contrib/contrib-prompt/external/spaceship
+git checkout v4.22.5
+```
+
 # New system setup
 1. [Ubuntu based distro](#ubuntu-based-distro)
 2. [OSX](#osx)
